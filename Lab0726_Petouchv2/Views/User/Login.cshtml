@@ -1,0 +1,448 @@
+﻿@model Lab0726_Petouchv2.Models.Membership
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h1>UserLogin</h1>
+
+@{
+	<!DOCTYPE html>
+	<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Login</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+			  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+		<link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+		<link href="~/LoginCss/lib/login.css" rel="stylesheet">
+		<link href="~/LoginCss/lib/sidebars_boot.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+				integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+				crossorigin="anonymous"></script>
+		<script src="~/LoginCss/lib/loginJS.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- header -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+		@*<link href="~/LoginCss/lib/header.css" rel="stylesheet">*@
+		<!-- 密碼的眼睛 -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		  asp-append-version="true" />
+
+
+
+	</head>
+
+	<body>
+		<!-- As a link -->
+		<nav class="navbar bg-body-tertiary">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<font style="vertical-align: inherit;">
+						<font style="vertical-align: inherit;">PETouch</font>
+					</font>`
+				</a>
+				<span>會員中心</span>
+				<a href="#">
+					<img src="~/LoginCss/image/itsyou-removebg-preview (2).png" style="border-radius:50%;overflow: hidden;" width="50"
+	  height="50" ;>
+				</a>
+			</div>
+		</nav>
+		<!-- As a BTN_Navbar -->
+		<div align="center">
+			<button type="button" class="btn btn-outline-primary above-button">
+				<font style="vertical-align: inherit;">
+					<font style="vertical-align: inherit;">走失協尋</font>
+				</font>
+			</button>
+			<button type="button" class="btn btn-outline-secondary above-button">
+				<font style="vertical-align: inherit;">
+					<font style="vertical-align: inherit;">公立認養</font>
+				</font>
+			</button>
+			<button type="button" class="btn btn-outline-success above-button">
+				<font style="vertical-align: inherit;">
+					<font style="vertical-align: inherit;">一般領養</font>
+				</font>
+			</button>
+			<button type="button" class="btn btn-outline-danger above-button">
+				<font style="vertical-align: inherit;">
+					<font style="vertical-align: inherit;">動物醫院</font>
+				</font>
+			</button>
+			<button type="button" class="btn btn-outline-warning above-button">
+				<font style="vertical-align: inherit;">
+					<font style="vertical-align: inherit;">討論區</font>
+				</font>
+			</button>
+		</div>
+		@*<span class="text-danger text-center" style="color:salmon"><p>@ViewBag.RegistrationSuccess</p></span>*@
+		<span class="text-danger text-center" style="color:salmon"><p>@ViewBag.LoginDirectly</p></span>
+
+		<div id="formContainer">
+			<div class=" col-sm-6 col-lg-4 offset-lg-4" id="login">
+
+				<div class="rounded-top-1 p-1" style="background-color: #EBC999;">
+					<h4 class="text-white font-weight-bold mb-1"><b>會員登入</b></h4>
+				</div>
+
+				<div class="border-top">
+					<div class="p-2">
+						<form action="Login" method="POST">
+							<div class="form-floating form-group">
+								<input value="" type="email" class="form-control" id="floatingEmail"
+									   name="Email" placeholder="E-mail帳號" required>
+								<label for="floatingEmail control-label">
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">E-mail帳號</font>
+									</font>
+								</label>
+								<span asp-validation-for="Email" class="text-danger"></span>
+
+							</div>
+
+							<div class="form-floating form-group" style="display: flex;">
+								<input type="password" class="form-control" id="UserPassword" data-toggle="password"
+									   name="Password" placeholder="密碼" required>
+								<label for="UserPassword control-label">
+									<font style="vertical-align: inherit;">密碼</font>
+								</label>
+								<button class="btn btn-outline-secondary" type="button" id="togglePassword" style="border-radius: 5px;">
+									<i class="far fa-eye"></i>
+								</button>
+								<span asp-validation-for="Password" class="text-danger"></span>
+							</div>
+							<div class="ActR" style="display: flex;justify-content: space-between;">
+								<input type="checkbox" class="ActRCheckbox" id="ActRemember" name="AccountRemember"
+									   value="0">
+								<label class="ActRLabel" for="ActRemember">記住帳號</label>
+								<label class="text-danger" style="margin-left: auto;">@Html.ActionLink("忘記密碼", "ForgetPwd", "Member")</label>
+ 							</div>
+							<div class="text-center form-group">
+								<button type="submit" class="w-100 rounded-top-1 p-1"
+										style="background-color: #EBC999; margin-bottom: 10px;">
+									登入
+								</button>
+							</div>
+						</form>
+						<div class="text-center">
+							<button onclick="switchForm()" class="w-100 rounded-top-1 p-1"
+									style="background-color: lightgoldenrodyellow; margin-bottom: 20px;">
+								尚未加入PETouch，點此註冊會員
+							</button>
+						</div>
+							<span class="text-danger" style="color:salmon"><p>@ViewBag.WrongWarning</p></span>
+					</div>
+				</div>
+			</div>
+			<div class=" col-sm-6 col-lg-4 offset-lg-4" id="register" style="display: none;">
+				<!-- style="margin: 0 asuto;" -->
+				<div class="rounded-top-1 p-1" style="background-color: #F26659;">
+					<h4 class="text-white font-weight-bold mb-1"><b>會員註冊</b></h4>
+				</div>
+
+				<div class="border-top">
+					<div class="p-2">
+						<form asp-controller="Member" asp-action="Register" enctype="multipart/form-data" method="post">
+							<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+							<div class="form-floating form-group">
+								<input value="" type="email" class="form-control" id="floatingEmail"
+								   asp-for="Email" placeholder="E-mail(將為您的預設帳號)" required
+		   pattern="[a-z0-9._%+-]+@@[a-z0-9.-]+\.[a-z]{2,}$">
+								<label for="floatingEmail" asp-for="Email" class="control-label">
+									<font style="vertical-align: inherit;">
+										<font style="vertical-align: inherit;">E-mail(將成為您的預設帳號)</font>
+									</font>
+								</label>
+							</div>
+
+							<div class="form-floating">
+								<input value="" type="text" class="form-control" id="floatingName" asp-for="UserName" name="UserName"
+		   placeholder="姓名" required>
+								<label for="floatingName" asp-for="UserName" class="control-label">
+									<font style="vertical-align: inherit;">姓名</font>
+								</label>
+							</div>
+							<div class="form-floating form-group">
+								<input value="" type="tel" class="form-control" id="floatingPhone" name="Phone" asp-for="Phone"
+		   placeholder="手機號碼" required pattern="^[09]{2}[0-9]{2}[0-9]{6}$">
+								<label for="floatingPhone" asp-for="Phone" class="control-label">
+									<font style="vertical-align: inherit;">手機號碼(格式須為09開頭)</font>
+								</label>
+							</div>
+							<div class="form-floating form-group">
+								<input type="password" class="form-control" id="floatingPassword" data-toggle="password"
+								   asp-for="Password" name="Password" placeholder="密碼" minlength="8" required>
+								<label for="floatingPassword" asp-for="Password" class="control-label">
+									<font style="vertical-align: inherit;">密碼</font>
+								</label>
+								<span asp-validation-for="Password" class="text-danger"></span>
+							</div>
+							<div class="form-floating form-group">
+								<input type="password" class="form-control" id="floatingPassword" data-toggle="password"
+								   asp-for="Password" name="Password" placeholder="再次確認密碼" minlength="8" required>
+								<label for="floatingPassword" asp-for="Password" class="control-label">
+									<font style="vertical-align: inherit;">再次確認密碼</font>
+								</label>
+
+
+							</div>
+
+
+							<div class="form-row">
+								<div class="col-md-9">
+									<div class="form-group row">
+										<div class="captchaContainer">
+											<div class="col-5 pr-0" style="display: flex; align-items: center;">
+												<canvas id="canvas" width="120" height="50" onclick="changeCaptcha()" style="float:left; border: 1px solid #ccc;
+												border-radius: 3px;"></canvas>
+											</div>
+
+											<div class="form-floating col-7 pl-0 col-md-11">
+												<input type="text" class="form-control border" id="floatingCAPCode"
+													   name="captchaCode" placeholder="驗證碼" required>
+												<label for="floatingCAPCode">
+													<font style="vertical-align: inherit;"> 請輸入驗證碼</font>
+												</label>
+											</div>
+
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="0" id="privacyCheckbox" required>
+								<label class="form-check-label" for="privacyCheckbox">
+									已閱讀並同意以下協議
+								</label>
+							</div>
+
+							<!-- Privacy Policy Modal -->
+							<div class="modal fade" id="privacyModal" tabindex="-1" aria-labelledby="privacyModalLabel"
+								 aria-hidden="true">
+								<div class="modal-dialog modal-dialog-scrollable">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h4 class="modal-title" id="privacyModalLabel">隱私權政策</h4>
+											<button type="button" class="btn-close" data-bs-dismiss="modal"
+													aria-label="Close"></button>
+										</div>
+										<div class="modal-body">
+											<b>非常歡迎您光臨「PETouch」（以下簡稱本網站），為了讓您能夠安心的使用本網站的各項服務與資訊，特此向您說明本網站的隱私權保護政策，以保障您的權益，請您詳閱下列內容：</b>
+											<hr />
+											<p>
+												一、隱私權保護政策的適用範圍<br />
+												隱私權保護政策內容，包括本網站如何處理在您使用網站服務時收集到的個人識別資料。隱私權保護政策不適用於本網站以外的相關連結網站，也不適用於非本網站所委託或參與管理的人員。
+											</p>
+											<p>
+												二、個人資料的蒐集、處理及利用方式<br />
+												•
+												當您造訪本網站或使用本網站所提供之功能服務時，我們將視該服務功能性質，請您提供必要的個人資料，並在該特定目的範圍內處理及利用您的個人資料；非經您書面同意，本網站不會將個人資料用於其他用途。<br />
+												• 本網站在您使用服務信箱、問卷調查等互動性功能時，會保留您所提供的姓名、電子郵件地址、聯絡方式及使用時間等。<br />
+												• 於一般瀏覽時，伺服器會自行記錄相關行徑，包括您使用連線設備的 IP
+												位址、使用時間、使用的瀏覽器、瀏覽及點選資料記錄等，做為我們增進網站服務的參考依據，此記錄為內部應用，決不對外公佈。<br />
+												•
+												為提供精確的服務，我們會將收集的問卷調查內容進行統計與分析，分析結果之統計數據或說明文字呈現，除供內部研究外，我們會視需要公佈統計數據及說明文字，但不涉及特定個人之資料。<br />
+												• 您可以隨時向我們提出請求，以更正或刪除本網站所蒐集您錯誤或不完整的個人資料。
+											<p />
+
+											<p>
+												三、資料之保護<br />
+												•
+												本網站主機均設有防火牆、防毒系統等相關的各項資訊安全設備及必要的安全防護措施，加以保護網站及您的個人資料採用嚴格的保護措施，只由經過授權的人員才能接觸您的個人資料，相關處理人員皆簽有保密合約，如有違反保密義務者，將會受到相關的法律處分。<br />
+												• 如因業務需要有必要委託其他單位提供服務時，本網站亦會嚴格要求其遵守保密義務，並且採取必要檢查程序以確定其將確實遵守。
+											<p />
+											<p>
+												四、網站對外的相關連結<br />
+												本網站的網頁提供其他網站的網路連結，您也可經由本網站所提供的連結，點選進入其他網站。但該連結網站不適用本網站的隱私權保護政策，您必須參考該連結網站中的隱私權保護政策。
+											<p />
+											<p>
+												五、與第三人共用個人資料之政策<br />
+												本網站絕不會提供、交換、出租或出售任何您的個人資料給其他個人、團體、私人企業或公務機關，但有法律依據或合約義務者，不在此限。<br />
+												前項但書之情形包括不限於：<br />
+												• 經由您書面同意。<br />
+												• 法律明文規定。<br />
+												• 為免除您生命、身體、自由或財產上之危險。<br />
+												• 與公務機關或學術研究機構合作，基於公共利益為統計或學術研究而有必要，且資料經過提供者處理或蒐集者依其揭露方式無從識別特定之當事人。<br />
+												•
+												當您在網站的行為，違反服務條款或可能損害或妨礙網站與其他使用者權益或導致任何人遭受損害時，經網站管理單位研析揭露您的個人資料是為了辨識、聯絡或採取法律行動所必要者。<br />
+												• 有利於您的權益。<br />
+												• 本網站委託廠商協助蒐集、處理或利用您的個人資料時，將對委外廠商或個人善盡監督管理之責。
+											<p />
+											<p>
+												六、Cookie 之使用<br />
+												為了提供您最佳的服務，本網站會在您的電腦中放置並取用我們的 Cookie，若您不願接受 Cookie
+												的寫入，您可在您使用的瀏覽器功能項中設定隱私權等級為高，即可拒絕 Cookie 的寫入，但可能會導致網站某些功能無法正常執行 。
+											<p />
+											<p>
+												七、隱私權保護政策之修正<br />
+												本網站隱私權保護政策將因應需求隨時進行修正，修正後的條款將刊登於網站上。
+											<p />
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-primary"
+													data-bs-dismiss="modal">
+												我同意
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="text-center">
+								<button type="submit" class="w-100 rounded-top-1 p-1 "
+										style="background-color: #F26659; margin-bottom: 10px;">
+									註冊
+								</button>
+							</div>
+						</form>
+						<div class="text-center">
+							<button onclick="switchForm()" class="w-100 rounded-top-1 p-1"
+									style="background-color: lightpink; margin-bottom: 80px;">
+								使用過PETouch，點此登入
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+		<script>
+
+			//眼睛密碼隱藏
+			document.getElementById("togglePassword").addEventListener("click", function () {
+				var passwordInput = document.getElementById("UserPassword");
+				var toggleButton = document.getElementById("togglePassword");
+				if (passwordInput.type === "password") {
+					passwordInput.type = "text";
+					toggleButton.innerHTML = '<i class="far fa-eye-slash"></i>';
+				} else {
+					passwordInput.type = "password";
+					toggleButton.innerHTML = '<i class="far fa-eye"></i>';
+				}
+			});
+			// document.getElementById("togglePassword").addEventListener("mousedown", function () {
+			//     var passwordInput = document.getElementById("UserPassword");
+			//     passwordInput.type = "text";
+			// });
+
+			// document.getElementById("togglePassword").addEventListener("mouseup", function () {
+			//     var passwordInput = document.getElementById("UserPassword");
+			//     passwordInput.type = "password";
+			// });
+
+			// 隱私權政策同意
+			var privacyCheckbox = document.getElementById('privacyCheckbox');
+			var privacyModal = new bootstrap.Modal(document.getElementById('privacyModal'));
+
+			privacyCheckbox.addEventListener('change', function () {
+				if (privacyCheckbox.checked) {
+					privacyModal.show();
+				} else {
+					privacyModal.hide();
+				}
+			});
+
+			// 表單切換
+			function switchForm() {
+				var formContainer = document.getElementById('formContainer');
+				var login = document.getElementById('login');
+				var register = document.getElementById('register');
+
+				if (login.style.display === 'none') {
+					login.style.display = 'block';
+					register.style.display = 'none';
+				} else {
+					login.style.display = 'none';
+					register.style.display = 'block';
+					initializeCanvas();
+				}
+			}
+
+			// CANVAS驗證碼更新
+			function initializeCanvas() {
+				var show_num = [];
+				var canvasContainer = document.querySelector(".captchaContainer");
+
+				initializeForm();
+
+				function initializeForm() {
+					draw(show_num);
+					canvasContainer.addEventListener("click", changeCaptcha);
+				}
+				function changeCaptcha() {
+					draw(show_num);
+				}
+
+				function draw(show_num) {
+					var canvas_width = document.getElementById('canvas').clientWidth;
+					var canvas_height = document.getElementById('canvas').clientHeight;
+					var canvas = document.getElementById("canvas"); //獲取canvas的對象，演員
+					var context = canvas.getContext("2d"); //獲取canvas畫圖的環境，演員表演的舞台台
+					canvas.width = canvas_width;
+					canvas.height = canvas_height;
+					var sCode =
+						"A,B,C,E,F,G,H,J,K,L,M,N,P,Q,R,S,T,W,X,Y,Z,1,2,3,4,5,6,7,8,9,0";
+					var aCode = sCode.split(",");
+					var aLength = aCode.length; //獲取數組的長度
+
+					for (var i = 0; i <= 3; i++) {
+						var j = Math.floor(Math.random() * aLength); //獲取隨機的索引值
+						var deg = Math.random() * 30 * Math.PI / 180; //產生0~30之間的隨機弧度
+						var txt = aCode[j]; //得到隨機的一個内容
+						show_num[i] = txt;
+						var x = 10 + i * 20; //文字在canvas上的x座標
+						var y = 20 + Math.random() * 8; //文字在canvas上的y座標
+						context.font = "bold 33px Consolas";
+
+						context.translate(x, y);
+						context.rotate(deg);
+
+						context.fillStyle = randomColor();
+						context.fillText(txt, 0, 0);
+
+						context.rotate(-deg);
+						context.translate(-x, -y);
+					}
+					for (var i = 0; i <= 5; i++) { //驗證碼上顯示線條
+						context.strokeStyle = randomColor();
+						context.beginPath();
+						context.moveTo(Math.random() * canvas_width, Math.random() * canvas_height);
+						context.lineTo(Math.random() * canvas_width, Math.random() * canvas_height);
+						context.stroke();
+					}
+					for (var i = 0; i <= 30; i++) { //驗證碼上顯示小點
+						context.strokeStyle = randomColor();
+						context.beginPath();
+						var x = Math.random() * canvas_width;
+						var y = Math.random() * canvas_height;
+						context.moveTo(x, y);
+						context.lineTo(x + 1, y + 1);
+						context.stroke();
+					}
+				}
+				function randomColor() { //得到隨機的顏色
+					var r = Math.floor(Math.random() * 256);
+					var g = Math.floor(Math.random() * 256);
+					var b = Math.floor(Math.random() * 256);
+					return "rgb(" + r + "," + g + "," + b + ")";
+				}
+			}
+
+		</script>
+	</body>
+
+	</html>
+}

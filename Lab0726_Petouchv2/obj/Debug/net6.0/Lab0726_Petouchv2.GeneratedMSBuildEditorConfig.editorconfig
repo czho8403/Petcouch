@@ -1,0 +1,101 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Lab0726_Petouchv2
+build_property.RootNamespace = Lab0726_Petouchv2
+build_property.ProjectDir = C:\Users\user\OneDrive\桌面\大專\Lab0729_0728Petouchv2\Lab0726_Petouchv2\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\user\OneDrive\桌面\大專\Lab0729_0728Petouchv2\Lab0726_Petouchv2
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/user/OneDrive/桌面/大專/Lab0729_0728Petouchv2/Lab0726_Petouchv2/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/桌面/大專/Lab0729_0728Petouchv2/Lab0726_Petouchv2/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/桌面/大專/Lab0729_0728Petouchv2/Lab0726_Petouchv2/Views/Member/DetailsMembercshtml.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXERldGFpbHNNZW1iZXJjc2h0bWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/桌面/大專/Lab0729_0728Petouchv2/Lab0726_Petouchv2/Views/Member/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/桌面/大專/Lab0729_0728Petouchv2/Lab0726_Petouchv2/Views/Member/ForgetPwd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXEZvcmdldFB3ZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/桌面/大專/Lab0729_0728Petouchv2/Lab0726_Petouchv2/Views/Member/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/桌面/大專/Lab0729_0728Petouchv2/Lab0726_Petouchv2/Views/Member/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/桌面/大專/Lab0729_0728Petouchv2/Lab0726_Petouchv2/Views/Member/SelfAdopt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXFNlbGZBZG9wdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/桌面/大專/Lab0729_0728Petouchv2/Lab0726_Petouchv2/Views/Member/selfLost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyXHNlbGZMb3N0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/桌面/大專/Lab0729_0728Petouchv2/Lab0726_Petouchv2/Views/RobotMember/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9ib3RNZW1iZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/桌面/大專/Lab0729_0728Petouchv2/Lab0726_Petouchv2/Views/RobotMember/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9ib3RNZW1iZXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/桌面/大專/Lab0729_0728Petouchv2/Lab0726_Petouchv2/Views/RobotMember/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9ib3RNZW1iZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/桌面/大專/Lab0729_0728Petouchv2/Lab0726_Petouchv2/Views/RobotMember/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9ib3RNZW1iZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/桌面/大專/Lab0729_0728Petouchv2/Lab0726_Petouchv2/Views/RobotMember/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9ib3RNZW1iZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/桌面/大專/Lab0729_0728Petouchv2/Lab0726_Petouchv2/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/桌面/大專/Lab0729_0728Petouchv2/Lab0726_Petouchv2/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/桌面/大專/Lab0729_0728Petouchv2/Lab0726_Petouchv2/Views/User/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/桌面/大專/Lab0729_0728Petouchv2/Lab0726_Petouchv2/Views/User/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/桌面/大專/Lab0729_0728Petouchv2/Lab0726_Petouchv2/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/桌面/大專/Lab0729_0728Petouchv2/Lab0726_Petouchv2/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/OneDrive/桌面/大專/Lab0729_0728Petouchv2/Lab0726_Petouchv2/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-wf9ax9e4wj

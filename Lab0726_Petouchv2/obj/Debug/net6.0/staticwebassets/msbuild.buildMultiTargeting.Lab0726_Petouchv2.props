@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Lab0726_Petouchv2.props" />
+</Project>
